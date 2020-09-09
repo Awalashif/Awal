@@ -1,0 +1,250 @@
+/* default css */
+*{  
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    height: 1500px;
+}
+a{
+    text-decoration: none;
+}
+li{
+    list-style: none;
+}
+.container{
+    width: 1170px;
+    margin: auto;
+}
+.text-center{
+    text-align: center;
+}
+.text-left{
+    text-align: left;
+}
+.text-right{
+    text-align: right;
+}
+/* font */
+@font-face{
+    font-family: 'Core Sans ES';
+    src: url(../../@font-face/dd2db6d843e5b4dbfadd3d09defa4b91.ttf);
+}
+@font-face{
+    font-family: 'goethegothicbold';
+    src: url(../../fonts/goethegothicbold.ttf);
+}
+/*============================================================ top area start*/
+header{
+    background: url(../image/home-banner.jpg) no-repeat center bottom/cover;
+    height: 900px;
+}
+.top-area{
+    padding-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+/* main menu */
+
+.menu-area{
+    
+}
+.menu-area ul{
+   margin-right: 60px; 
+}
+.menu-area ul li{
+    display: inline-block;
+    
+    transition: all 0.3s ease;
+    
+}
+.menu-area ul li a{
+    color: #002347;
+    padding: 10px 20px;
+    display: inline-block;
+    font-size: 15px;
+    font-weight: 600;
+}
+.menu-area ul ul li:hover > a{
+    background-color: #fdc632;
+    color: white;
+}
+
+/* sub menu */
+
+.menu-area ul li{
+    position: relative;
+}
+.menu-area ul li ul{
+    position: absolute;
+    left: 0;
+    top: 100%;
+    width: 200px;
+    margin-left: 5px;
+    background-color: #fff;
+    
+}
+.menu-area ul li ul li{
+    display: block;
+    margin-left: 0px;
+}
+.menu-area ul li ul li a{
+    display: block;
+    text-align: left;
+    color: #0c2d4f;
+}
+.menu-area ul ul li:nth-child(1) a{
+    border-left: none;
+}
+
+/* hover part */
+
+.menu-area ul li ul{
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.7s ease;
+}
+.menu-area ul li:hover ul{
+    opacity: 1;
+    visibility: visible;
+    transition: all 0.7s ease;
+}
+
+.menu-area ul li:hover > a{
+    color: #fdc632;
+}
+
+/* search area */
+.search-area a{
+    color: #002347;
+    font-size: 15px;
+}
+/* hover */
+.search-area a:hover{
+    color: #fda742;
+}
+
+/* hero area */
+
+.hero-area{
+    margin-top: 180px;
+}
+.content-area p{
+    color: #002347;
+    font-family: goethegothicbold;
+    font-size: 20px;
+    margin-bottom: 30px;
+}
+.content-area h1{
+    color: #002347;
+    font-size: 48px;
+    font-family: goethegothicbold;
+}
+
+
+/* button css */
+.button{
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+.button .btn-1{
+    background-color: #002347;
+    padding: 15px 40px;
+    border-radius: 5px;
+    transition: all 0.8s ease;
+}
+.button .btn-1 a{
+    color: #fda742;
+    font-size: 12px;
+    font-family: goethegothicbold;
+    transition: all 0.8s ease;
+}
+/* hover button 1*/
+.button .btn-1:hover{
+    cursor: pointer;
+    background-color: #fff;
+}
+.button .btn-1:hover a{
+    color: #002347;
+}
+
+.button .btn-2{
+    background-color: #fdc632;
+    padding: 15px 40px;
+    border-radius: 5px;
+    transition: all 0.8s ease;
+}
+.button .btn-2 a{
+    color: #002340;
+    font-size: 12px;
+    font-family: goethegothicbold;
+    transition: all 0.8s ease;
+}
+
+/* hover button 2 */
+.button .btn-2:hover{
+    cursor: pointer;
+    background-color: #002347;
+}
+.button .btn-2:hover a{
+    color: #fdc632;
+}
+
+/* =====================================================================feature start */
+.feature-caption{
+    margin-top: 150px;
+}
+.feature-caption h2 {
+    font-family: goethegothicbold;
+    font-weight: 900;
+    font-size: 35px;
+    color: #002347;
+    margin-bottom: 20px;
+}
+.feature-caption p{
+    
+    font-style: italic;
+    font-size: 17px;
+    color: #aaa8ac;
+}
+/* box group */
+
+.box-group{
+    display: flex;
+}
+.box-group .box{
+    width: 380px;
+    margin: 20px 30px;
+    background-color: #f9f9ff;
+    padding: 39px 29px;
+    transition: all 0.5s ease;
+}
+.box i{
+  font-size: 50px;
+  color: #002347;
+}
+.box h3{
+    font-size: 20px;
+    color: #002347;
+    font-family: goethegothicbold;
+    margin-bottom: 10px;
+}
+.box p{
+    color: #7b838a;
+    line-height: 25px;
+    word-spacing: 4PX;
+}
+/* hover */
+.box-group .box:hover{
+    box-shadow: 0px 10px 20px #ddd;
+}
